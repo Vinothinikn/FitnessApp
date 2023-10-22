@@ -3,7 +3,7 @@ package com.fitnessapp.data;
 public class FitnessData {
 	
 	int userId;
-	String workOutId;
+	int workOutId;
 	String workOutName;
 	String workOutTime;
 	String WorkOutDate;
@@ -13,10 +13,11 @@ public class FitnessData {
 	public void setUserId(int userId) {
 		this.userId = userId;
 	}
-	public String getWorkOutId() {
+	
+	public int getWorkOutId() {
 		return workOutId;
 	}
-	public void setWorkOutId(String workOutId) {
+	public void setWorkOutId(int workOutId) {
 		this.workOutId = workOutId;
 	}
 	public String getWorkOutName() {

@@ -10,11 +10,13 @@ public class UserController {
 	
 	@RequestMapping("/welcome")
 	public ModelAndView welcomeUser(HttpServletRequest request) {
-		
+		double randomDouble = Math.random();
+        int userId = (int) (randomDouble * 100);
 		String name = request.getParameter("name");
 		ModelAndView mv = new ModelAndView();
 		mv.setViewName("welcomeUser");
 		mv.addObject("username", name);
+		mv.addObject("userId", userId);
 		
 		return mv;
 	}
